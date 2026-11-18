@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Qddz | Biodata | Owner: Aqid | IMD318 Individual Project, UiTM -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal details, interests and goals of Aqid.">
+  <meta name="author" content="Aqid">
+  <title>Biodata | Qddz - Aqid's Personal Website</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Qddz home"><img src="images/logo.svg" alt="Qddz logo" class="keep"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html" aria-current="page">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools" role="group" aria-label="Accessibility tools">
+        <button class="btn small ghost" id="fontDown" title="Smaller text" aria-label="Decrease text size">A-</button>
+        <button class="btn small ghost" id="fontUp" title="Larger text" aria-label="Increase text size">A+</button>
+        <button class="btn small ghost" id="hcBtn" title="High contrast">Contrast</button>
+        <button class="btn small ghost" id="textBtn" title="Text only mode">Text only</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> &raquo; Biodata</p>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content" class="wrap">
+
+    <h1>Biodata</h1>
+    <p><a href="#personal">Personal details</a> &middot; <a href="#interests">Interests</a> &middot; <a href="#goals">Goals</a> &middot; <a href="#code">A bit of code</a></p>
+
+    <div class="two-col">
+      <figure class="figure">
+        <img src="images/avatar.png" alt="Avatar of Aqid" width="320" height="320" style="border-radius:var(--radius)">
+        <figcaption>Aqid (Qddz)</figcaption>
+      </figure>
+      <section id="personal">
+        <h2>Personal details</h2>
+        <div class="table-wrap">
+        <table class="profile-table">
+          <caption>Profile of Aqid</caption>
+          <tbody>
+            <tr><th scope="row">Name</th><td>Aqid</td></tr>
+            <tr><th scope="row">Online name</th><td><strong>Qddz</strong></td></tr>
+            <tr><th scope="row">Student ID</th><td><mark>[edit: UiTM ID]</mark></td></tr>
+            <tr><th scope="row">Date of birth</th><td><mark>[edit: date]</mark></td></tr>
+            <tr><th scope="row">Nationality</th><td><mark>[edit: nationality]</mark></td></tr>
+            <tr><th scope="row">Languages</th><td>Bahasa Melayu, English <mark>[edit: add more]</mark></td></tr>
+            <tr><th scope="row">University</th><td>Universiti Teknologi MARA (UiTM)</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+    </div>
+
+    <section id="interests" class="reveal">
+      <h2>Interests</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Unordered list</h3>
+          <ul class="dot"><li>Web design</li><li>Gaming</li><li>Music</li><li>Photography <mark>[edit: your hobbies]</mark></li></ul>
+        </div>
+        <div class="card">
+          <h3>Custom marker list</h3>
+          <ul class="arrow"><li>Learning new tools</li><li>Building small projects</li><li>Helping friends with tech</li></ul>
+        </div>
+      </div>
+      <h3>Text formatting examples</h3>
+      <p><strong>Bold</strong>, <em>italic</em>, <u>underlined</u>, <span class="text-pink">coloured</span>,
+      <mark>highlighted</mark>, <del>deleted</del> and <ins>inserted</ins> text. Water is H<sub>2</sub>O,
+      and the square of x is x<sup>2</sup>. I study at <abbr title="Universiti Teknologi MARA">UiTM</abbr>
+      and I am in my 1<sup>st</sup> year of web studies. <small>(This line is small print.)</small></p>
+    </section>
+
+    <section id="goals" class="reveal">
+      <h2>My goals</h2>
+      <ol class="fancy">
+        <li>Finish my studies with good results.</li>
+        <li>Build a portfolio of real web projects.</li>
+        <li>Get an internship in web or digital media.</li>
+        <li>Keep learning something new every month.</li>
+      </ol>
+      <dl>
+        <dt>Motto</dt><dd>Small steps every day.</dd>
+        <dt>Dream job</dt><dd>Front-end developer / web designer <mark>[edit: your dream job]</mark></dd>
+      </dl>
+    </section>
+
+    <section id="code" class="reveal">
+      <h2>A bit of code (preformatted text)</h2>
+<pre>
+function hello(name) {
+    return "Hello, " + name + "!";
+}
+console.log(hello("Qddz"));   // Hello, Qddz!
+</pre>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER: ownership, dates, contact ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <section>
+          <h4>Statement of Ownership</h4>
+          <p>This website is designed, written and maintained by <strong>Aqid</strong> (brand name <em>Qddz</em>)
+          as the individual project for <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr>,
+          Universiti Teknologi MARA (UiTM). All content &copy; 2026 Aqid.</p>
+        </section>
+        <section>
+          <h4>Dates</h4>
+          <ul>
+            <li>Created: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>Last updated: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>This file saved: <span class="lastmod">-</span></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contact the author</h4>
+          <ul>
+            <li>Name: Aqid</li>
+            <li>Email: <a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: your real email]</mark></li>
+            <li><a href="contact.html">Contact page</a> &middot; <a href="sitemap.html">Site map</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copy">&copy; 2026 Qddz by Aqid &middot; Built with HTML, CSS &amp; JavaScript &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><button aria-label="Close notification">&times;</button><span class="msg"></span></div>
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* shows the date this file was last saved */
+    document.querySelectorAll(".lastmod").forEach(function (s) { s.textContent = document.lastModified; });
+  </script>
+</body>
+</html>

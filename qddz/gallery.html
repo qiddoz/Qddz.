@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Qddz | Gallery | Owner: Aqid | IMD318 Individual Project, UiTM -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Images, video and audio gallery of Qddz.">
+  <meta name="author" content="Aqid">
+  <title>Gallery | Qddz - Aqid's Personal Website</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Qddz home"><img src="images/logo.svg" alt="Qddz logo" class="keep"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools" role="group" aria-label="Accessibility tools">
+        <button class="btn small ghost" id="fontDown" title="Smaller text" aria-label="Decrease text size">A-</button>
+        <button class="btn small ghost" id="fontUp" title="Larger text" aria-label="Increase text size">A+</button>
+        <button class="btn small ghost" id="hcBtn" title="High contrast">Contrast</button>
+        <button class="btn small ghost" id="textBtn" title="Text only mode">Text only</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> &raquo; Gallery</p>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content" class="wrap">
+
+    <h1>Gallery</h1>
+    <p>Click a picture to enlarge it. <mark>[edit: replace with your own photos]</mark></p>
+    <p><a href="#pics">Pictures</a> &middot; <a href="#video">Video</a> &middot; <a href="#audio">Audio</a> &middot; <a href="#formats">Image formats</a></p>
+
+    <section id="pics"><h2>Pictures</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery1-thumb.jpg" data-full="images/gallery1.jpg" alt="Artwork 1: Ripples" width="300" height="200" loading="lazy">
+          <figcaption>1. Ripples &middot; <a href="images/gallery1.jpg">full size</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery2-thumb.jpg" data-full="images/gallery2.jpg" alt="Artwork 2: Pixel waves" width="300" height="200" loading="lazy">
+          <figcaption>2. Pixel waves &middot; <a href="images/gallery2.jpg">full size</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery3-thumb.jpg" data-full="images/gallery3.jpg" alt="Artwork 3: Sunset peaks" width="300" height="200" loading="lazy">
+          <figcaption>3. Sunset peaks &middot; <a href="images/gallery3.jpg">full size</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery4-thumb.jpg" data-full="images/gallery4.jpg" alt="Artwork 4: Colour blocks" width="300" height="200" loading="lazy">
+          <figcaption>4. Colour blocks &middot; <a href="images/gallery4.jpg">full size</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery5-thumb.jpg" data-full="images/gallery5.jpg" alt="Artwork 5: Code rain" width="300" height="200" loading="lazy">
+          <figcaption>5. Code rain &middot; <a href="images/gallery5.jpg">full size</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery6-thumb.jpg" data-full="images/gallery6.jpg" alt="Artwork 6: Geometry" width="300" height="200" loading="lazy">
+          <figcaption>6. Geometry &middot; <a href="images/gallery6.jpg">full size</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="video" class="reveal"><h2>Video</h2>
+      <div class="video-box">
+        <video controls preload="metadata" width="640" height="360">
+          <source src="media/intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="muted">An animated intro to Qddz (8 seconds).</p>
+    </section>
+
+    <section id="audio" class="reveal"><h2>Audio</h2>
+      <audio controls preload="none">
+        <source src="media/chime.mp3" type="audio/mpeg">
+        <source src="media/chime.wav" type="audio/wav">
+        Your browser does not support audio.
+      </audio>
+      <p class="muted">A short chime made for this site.</p>
+    </section>
+
+    <section id="formats" class="reveal"><h2>Different image types</h2>
+      <div class="grid g3">
+        <div class="card"><img src="images/avatar.png" alt="PNG avatar" width="200"><p><strong>PNG</strong>: sharp graphics</p></div>
+        <div class="card"><img src="images/gallery3-thumb.jpg" alt="JPG artwork" width="300"><p><strong>JPG</strong>: photos</p></div>
+        <div class="card"><img src="images/loader.gif" alt="Animated GIF of orbiting dots" class="spin-gif keep"><p><strong>GIF</strong>: animation</p></div>
+        <div class="card"><img src="images/logo.svg" alt="SVG logo" width="200" class="keep"><p><strong>SVG</strong>: scalable vector</p></div>
+      </div>
+    </section>
+
+    <div id="lightbox" role="dialog" aria-label="Enlarged picture"><img src="" alt=""></div>
+
+  </main>
+
+  <!-- ===== FOOTER: ownership, dates, contact ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <section>
+          <h4>Statement of Ownership</h4>
+          <p>This website is designed, written and maintained by <strong>Aqid</strong> (brand name <em>Qddz</em>)
+          as the individual project for <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr>,
+          Universiti Teknologi MARA (UiTM). All content &copy; 2026 Aqid.</p>
+        </section>
+        <section>
+          <h4>Dates</h4>
+          <ul>
+            <li>Created: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>Last updated: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>This file saved: <span class="lastmod">-</span></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contact the author</h4>
+          <ul>
+            <li>Name: Aqid</li>
+            <li>Email: <a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: your real email]</mark></li>
+            <li><a href="contact.html">Contact page</a> &middot; <a href="sitemap.html">Site map</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copy">&copy; 2026 Qddz by Aqid &middot; Built with HTML, CSS &amp; JavaScript &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><button aria-label="Close notification">&times;</button><span class="msg"></span></div>
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* shows the date this file was last saved */
+    document.querySelectorAll(".lastmod").forEach(function (s) { s.textContent = document.lastModified; });
+  </script>
+</body>
+</html>

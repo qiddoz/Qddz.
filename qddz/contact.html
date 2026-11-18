@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Qddz | Contact | Owner: Aqid | IMD318 Individual Project, UiTM -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Aqid (Qddz).">
+  <meta name="author" content="Aqid">
+  <title>Contact | Qddz - Aqid's Personal Website</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Qddz home"><img src="images/logo.svg" alt="Qddz logo" class="keep"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools" role="group" aria-label="Accessibility tools">
+        <button class="btn small ghost" id="fontDown" title="Smaller text" aria-label="Decrease text size">A-</button>
+        <button class="btn small ghost" id="fontUp" title="Larger text" aria-label="Increase text size">A+</button>
+        <button class="btn small ghost" id="hcBtn" title="High contrast">Contrast</button>
+        <button class="btn small ghost" id="textBtn" title="Text only mode">Text only</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> &raquo; Contact</p>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content" class="wrap">
+
+    <h1>Contact</h1>
+    <div class="grid g2">
+      <section class="card">
+        <h2>Send a message</h2>
+        <form id="contactForm" novalidate>
+          <div><label for="cName">Name</label><input id="cName" name="name" type="text" required><div class="error" id="cNameErr"></div></div>
+          <div><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" required><div class="error" id="cEmailErr"></div></div>
+          <div><label for="cTopic">Topic</label>
+            <select id="cTopic"><option>General</option><option>Collaboration</option><option>Feedback</option></select></div>
+          <div><label for="cMsg">Message</label><textarea id="cMsg" rows="5" required></textarea><div class="error" id="cMsgErr"></div></div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <p class="muted"><small>Demo form: it validates in your browser and does not send email.</small></p>
+      </section>
+      <section class="card">
+        <h2>Find me</h2>
+        <div class="table-wrap"><table class="profile-table"><tbody>
+          <tr><th scope="row">Email</th><td><a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: email]</mark></td></tr>
+          <tr><th scope="row">GitHub</th><td><a href="https://github.com/" target="_blank" rel="noopener">github.com/<mark>[edit: username]</mark></a></td></tr>
+          <tr><th scope="row">Phone</th><td><mark>[edit: phone]</mark></td></tr>
+          <tr><th scope="row">Location</th><td>Selangor, Malaysia</td></tr>
+        </tbody></table></div>
+        <h3>Credentials</h3>
+        <p>Student, Universiti Teknologi MARA (UiTM). Course: IMD318.</p>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER: ownership, dates, contact ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <section>
+          <h4>Statement of Ownership</h4>
+          <p>This website is designed, written and maintained by <strong>Aqid</strong> (brand name <em>Qddz</em>)
+          as the individual project for <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr>,
+          Universiti Teknologi MARA (UiTM). All content &copy; 2026 Aqid.</p>
+        </section>
+        <section>
+          <h4>Dates</h4>
+          <ul>
+            <li>Created: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>Last updated: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>This file saved: <span class="lastmod">-</span></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contact the author</h4>
+          <ul>
+            <li>Name: Aqid</li>
+            <li>Email: <a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: your real email]</mark></li>
+            <li><a href="contact.html">Contact page</a> &middot; <a href="sitemap.html">Site map</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copy">&copy; 2026 Qddz by Aqid &middot; Built with HTML, CSS &amp; JavaScript &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><button aria-label="Close notification">&times;</button><span class="msg"></span></div>
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* shows the date this file was last saved */
+    document.querySelectorAll(".lastmod").forEach(function (s) { s.textContent = document.lastModified; });
+  </script>
+</body>
+</html>

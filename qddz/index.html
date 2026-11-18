@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Qddz | Home | Owner: Aqid | IMD318 Individual Project, UiTM -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qddz - the personal website and resume of Aqid, an IMD318 student at UiTM.">
+  <meta name="author" content="Aqid">
+  <title>Home | Qddz - Aqid's Personal Website</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Qddz home"><img src="images/logo.svg" alt="Qddz logo" class="keep"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools" role="group" aria-label="Accessibility tools">
+        <button class="btn small ghost" id="fontDown" title="Smaller text" aria-label="Decrease text size">A-</button>
+        <button class="btn small ghost" id="fontUp" title="Larger text" aria-label="Increase text size">A+</button>
+        <button class="btn small ghost" id="hcBtn" title="High contrast">Contrast</button>
+        <button class="btn small ghost" id="textBtn" title="Text only mode">Text only</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content" class="wrap">
+
+    <section class="hero" id="top">
+      <div>
+        <p class="kicker"><span id="greeting">Hello</span>, and welcome</p>
+        <h1>I'm <span class="gradient-text">Aqid</span>,<br>this is <u>Qddz</u>.</h1>
+        <p style="font-size:1.25rem">I'm <span id="typer" class="typing"></span></p>
+        <p>This is my personal resume website: who I am, what I have studied, what I can do and the things I enjoy.
+        Everything here was written by hand in a text editor for the <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr> project.</p>
+        <p>
+          <a class="btn" href="biodata.html">About me</a>
+          <a class="btn ghost" href="#explore">Explore the site</a>
+          <button class="btn ghost" id="chimeBtn" type="button">&#9835; Play chime</button>
+        </p>
+        <div class="clock-box" aria-label="Live clock">
+          <strong id="clockTime">--:--:--</strong>
+          <span id="clockDate">loading date...</span>
+          <span>Kuala Lumpur time (MYT, UTC<sup>+8</sup>)</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/avatar.png" alt="Qddz monogram avatar: a letter Q inside a glowing ring" width="400" height="400">
+        <p class="muted"><small>Placeholder avatar. <mark>[edit: replace images/avatar.png with your photo]</mark></small></p>
+      </div>
+    </section>
+
+    <!-- In-page (anchor) navigation -->
+    <nav aria-label="On this page" class="card">
+      <strong>Jump to:</strong>
+      <a href="#about">About</a> &middot; <a href="#explore">Explore (image map)</a> &middot;
+      <a href="#highlights">Highlights</a> &middot; <a href="#links">Useful links</a> &middot; <a href="#search">Search</a>
+    </nav>
+
+    <section id="about" class="reveal">
+      <h2>About this site</h2>
+      <p>Hi! I'm <strong>Aqid</strong>, a student at <em>Universiti Teknologi MARA</em>. I chose <b>Qddz</b> as my online
+      name because it is short, unique and easy to remember. The pages use <ins>semantic HTML</ins>,
+      <del>no templates</del> and a hand-written stylesheet.</p>
+      <blockquote>"Build it small, make it work, then make it beautiful."</blockquote>
+    </section>
+
+    <section id="explore" class="reveal">
+      <h2>Explore (click the map)</h2>
+      <p>This picture is an <strong>image map</strong>: click a coloured zone to jump to that page.</p>
+      <div class="map-wrap">
+        <img src="images/mapimage.png" width="800" height="400" usemap="#homeMap" id="mapImg"
+             alt="Clickable map with three zones: Skills, Education and Contact" class="keep">
+        <map name="homeMap" id="homeMapEl">
+          <area shape="rect" coords="40,100,260,300" href="skills.html" alt="Skills page" title="Skills">
+          <area shape="rect" coords="290,100,510,300" href="education.html" alt="Education page" title="Education">
+          <area shape="rect" coords="540,100,760,300" href="contact.html" alt="Contact page" title="Contact">
+        </map>
+      </div>
+    </section>
+
+    <section id="highlights" class="reveal">
+      <h2>Highlights</h2>
+      <div class="grid g3">
+        <article class="card"><h3>&#128214; Education</h3><p>My journey at UiTM and before.</p><a href="education.html">Read more &rarr;</a></article>
+        <article class="card"><h3>&#128188; Experience</h3><p>Work, projects and volunteering.</p><a href="experience.html">Read more &rarr;</a></article>
+        <article class="card"><h3>&#128247; Gallery</h3><p>Photos, a video and sound.</p><a href="gallery.html">Read more &rarr;</a></article>
+      </div>
+      <h3>Quick facts</h3>
+      <ul class="star">
+        <li>Brand name: <strong>Qddz</strong></li>
+        <li>Studying at <a href="https://uitm.edu.my" target="_blank" rel="noopener">UiTM</a></li>
+        <li>Favourite languages: HTML, CSS, JavaScript</li>
+        <li>You are visitor visit #<span id="visitCount">1</span> on this browser</li>
+      </ul>
+    </section>
+
+    <section id="links" class="reveal">
+      <h2>Useful links</h2>
+      <p>External sites (open in a new tab). Thumbnails link to the websites.</p>
+      <div class="grid g3">
+        <a class="card thumb-link" href="https://github.com" target="_blank" rel="noopener"><img src="images/thumb-github.png" alt="GitHub thumbnail" width="320" height="180"><strong>GitHub</strong><br><small class="muted">Where this site is hosted</small></a>
+        <a class="card thumb-link" href="https://uitm.edu.my" target="_blank" rel="noopener"><img src="images/thumb-uitm.png" alt="UiTM thumbnail" width="320" height="180"><strong>UiTM</strong><br><small class="muted">My university</small></a>
+        <a class="card thumb-link" href="https://www.w3schools.com/w3css/" target="_blank" rel="noopener"><img src="images/thumb-w3.png" alt="W3Schools thumbnail" width="320" height="180"><strong>W3Schools</strong><br><small class="muted">Tutorials &amp; W3.CSS</small></a>
+        <a class="card thumb-link" href="https://developer.mozilla.org" target="_blank" rel="noopener"><img src="images/thumb-mdn.png" alt="MDN thumbnail" width="320" height="180"><strong>MDN Web Docs</strong><br><small class="muted">Web reference</small></a>
+      </div>
+    </section>
+
+    <section id="search" class="reveal search-box">
+      <h2>Search this site</h2>
+      <label for="siteSearch">Type a word (try "skills", "family" or "video")</label>
+      <input type="search" id="siteSearch" placeholder="Search pages..." autocomplete="off">
+      <ul id="searchResults" aria-live="polite"></ul>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER: ownership, dates, contact ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <section>
+          <h4>Statement of Ownership</h4>
+          <p>This website is designed, written and maintained by <strong>Aqid</strong> (brand name <em>Qddz</em>)
+          as the individual project for <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr>,
+          Universiti Teknologi MARA (UiTM). All content &copy; 2026 Aqid.</p>
+        </section>
+        <section>
+          <h4>Dates</h4>
+          <ul>
+            <li>Created: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>Last updated: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>This file saved: <span class="lastmod">-</span></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contact the author</h4>
+          <ul>
+            <li>Name: Aqid</li>
+            <li>Email: <a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: your real email]</mark></li>
+            <li><a href="contact.html">Contact page</a> &middot; <a href="sitemap.html">Site map</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copy">&copy; 2026 Qddz by Aqid &middot; Built with HTML, CSS &amp; JavaScript &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><button aria-label="Close notification">&times;</button><span class="msg"></span></div>
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* shows the date this file was last saved */
+    document.querySelectorAll(".lastmod").forEach(function (s) { s.textContent = document.lastModified; });
+  </script>
+</body>
+</html>

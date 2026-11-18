@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Qddz | Site Map | Owner: Aqid | IMD318 Individual Project, UiTM -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site map and search of the Qddz website.">
+  <meta name="author" content="Aqid">
+  <title>Site Map | Qddz - Aqid's Personal Website</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Qddz home"><img src="images/logo.svg" alt="Qddz logo" class="keep"></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">Biodata</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html" aria-current="page">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools" role="group" aria-label="Accessibility tools">
+        <button class="btn small ghost" id="fontDown" title="Smaller text" aria-label="Decrease text size">A-</button>
+        <button class="btn small ghost" id="fontUp" title="Larger text" aria-label="Increase text size">A+</button>
+        <button class="btn small ghost" id="hcBtn" title="High contrast">Contrast</button>
+        <button class="btn small ghost" id="textBtn" title="Text only mode">Text only</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> &raquo; Site Map</p>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="content" class="wrap">
+
+    <h1>Site Map</h1>
+    <section class="search-box">
+      <label for="siteSearch">Search this site</label>
+      <input type="search" id="siteSearch" placeholder="Search pages..." autocomplete="off">
+      <ul id="searchResults" aria-live="polite"></ul>
+    </section>
+    <h2>All pages</h2>
+    <ul class="arrow">
+      <li><a href="index.html">Home</a>
+        <ul class="dot"><li><a href="index.html#about">About</a></li><li><a href="index.html#explore">Image map</a></li><li><a href="index.html#links">Useful links</a></li></ul></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html">Gallery</a>
+        <ul class="dot"><li><a href="gallery.html#pics">Pictures</a></li><li><a href="gallery.html#video">Video</a></li><li><a href="gallery.html#audio">Audio</a></li></ul></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+    <h2>Files in this project</h2>
+<pre>
+qddz/
+  index.html  biodata.html  experience.html  education.html
+  skills.html family.html   gallery.html     contact.html
+  sitemap.html reflection.html
+  css/style.css
+  js/script.js
+  images/   (png, jpg, gif, svg)
+  media/    (mp4, mp3, wav)
+</pre>
+
+  </main>
+
+  <!-- ===== FOOTER: ownership, dates, contact ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <section>
+          <h4>Statement of Ownership</h4>
+          <p>This website is designed, written and maintained by <strong>Aqid</strong> (brand name <em>Qddz</em>)
+          as the individual project for <abbr title="Introduction to Web Content Management &amp; Design">IMD318</abbr>,
+          Universiti Teknologi MARA (UiTM). All content &copy; 2026 Aqid.</p>
+        </section>
+        <section>
+          <h4>Dates</h4>
+          <ul>
+            <li>Created: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>Last updated: <time datetime="2026-11-18">18 November 2026</time></li>
+            <li>This file saved: <span class="lastmod">-</span></li>
+          </ul>
+        </section>
+        <section>
+          <h4>Contact the author</h4>
+          <ul>
+            <li>Name: Aqid</li>
+            <li>Email: <a href="mailto:aqid@example.com">aqid@example.com</a> <mark>[edit: your real email]</mark></li>
+            <li><a href="contact.html">Contact page</a> &middot; <a href="sitemap.html">Site map</a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="copy">&copy; 2026 Qddz by Aqid &middot; Built with HTML, CSS &amp; JavaScript &middot; Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><button aria-label="Close notification">&times;</button><span class="msg"></span></div>
+  <button id="topBtn" aria-label="Back to top">&uarr;</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    /* shows the date this file was last saved */
+    document.querySelectorAll(".lastmod").forEach(function (s) { s.textContent = document.lastModified; });
+  </script>
+</body>
+</html>
